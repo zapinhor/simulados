@@ -33,7 +33,10 @@ function StateContainer({
     >
       <div className="w-full max-w-xl rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm md:p-10">
         {icon && (
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-50 text-3xl">
+          <div
+            className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-50 text-3xl"
+            aria-hidden="true"
+          >
             {icon}
           </div>
         )}

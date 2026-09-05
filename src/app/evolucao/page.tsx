@@ -184,7 +184,10 @@ function SubjectEvolutionCard({
 
       <div className="flex min-w-0 items-start justify-between gap-3 sm:gap-4">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-xl sm:h-12 sm:w-12 sm:text-2xl">
+          <div
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-xl sm:h-12 sm:w-12 sm:text-2xl"
+            aria-hidden="true"
+          >
             {
               subject.icon
             }

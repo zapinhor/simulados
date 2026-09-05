@@ -784,7 +784,7 @@ export default function NewExamPage() {
                       })
                     );
                   }}
-                  className="mt-3 min-h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base font-semibold text-slate-700 outline-none transition focus:border-blue-500 sm:max-w-[220px] sm:text-sm"
+              className="mt-3 min-h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base font-semibold text-slate-700 transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 focus:ring-offset-1 sm:max-w-[220px] sm:text-sm"
                 />
               </div>
             </section>
@@ -1559,7 +1559,10 @@ export default function NewExamPage() {
 
               {config.subjects.length ===
                 0 && (
-                <div className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3">
+                <div
+                  className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3"
+                  role="status"
+                >
                   <p className="text-xs leading-5 text-red-700">
                     Selecione pelo menos uma
                     matéria para gerar a
@@ -1576,7 +1579,10 @@ export default function NewExamPage() {
                 0 &&
                 availableQuestions ===
                   0 && (
-                  <div className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3">
+                  <div
+                    className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3"
+                    role="status"
+                  >
                     <p className="text-xs leading-5 text-red-700">
                       Não existem questões
                       que correspondam à
@@ -1599,7 +1605,7 @@ export default function NewExamPage() {
                   tabIndex={-1}
                   role="alert"
                   aria-atomic="true"
-                  className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3 focus:outline-none"
+              className="mt-5 rounded-xl border border-red-200 bg-red-50 p-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
                 >
                   <p className="text-xs font-bold text-red-700">
                     Não foi possível gerar

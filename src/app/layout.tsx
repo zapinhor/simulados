@@ -49,7 +49,7 @@ export default function RootLayout({
 
         <a
           href="#conteudo-principal"
-          className="fixed left-4 top-4 z-[9999] -translate-y-24 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white shadow-xl transition-transform focus:translate-y-0 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        className="fixed left-4 top-4 z-[9999] -translate-y-24 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white shadow-xl transition-transform focus:translate-y-0 focus:ring-4 focus:ring-blue-300"
         >
           Pular para o conteúdo
         </a>

@@ -64,6 +64,9 @@ function normalizeGoals(
   goals: StudyGoals
 ): StudyGoals {
   return {
+    updatedAt:
+      goals.updatedAt,
+
     weeklyQuestions:
       clampNumber(
         goals.weeklyQuestions,
@@ -326,7 +329,7 @@ function GoalInput({
             )
           )
         }
-        className="mt-3 min-h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base font-bold text-slate-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 sm:text-sm"
+        className="mt-3 min-h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base font-bold text-slate-900 transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 focus:ring-offset-1 sm:text-sm"
       />
 
       <p

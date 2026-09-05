@@ -800,7 +800,8 @@ export default function ExamResultPage() {
             href="/revisao"
             className="min-h-12 rounded-xl border border-violet-200 bg-violet-50 px-5 py-3 text-center text-sm font-bold text-violet-700 transition hover:bg-violet-100"
           >
-            🎯 Treinar erros
+            <span aria-hidden="true">🎯</span>{" "}
+            Treinar erros
           </Link>
 
           <Link
@@ -1244,7 +1245,8 @@ export default function ExamResultPage() {
             href="/recomendado"
             className="min-h-12 rounded-xl border border-indigo-200 bg-indigo-50 px-6 py-3 text-center text-sm font-bold text-indigo-700 transition hover:bg-indigo-100"
           >
-            ✨ Simulado recomendado
+            <span aria-hidden="true">✨</span>{" "}
+            Simulado recomendado
           </Link>
 
           <Link

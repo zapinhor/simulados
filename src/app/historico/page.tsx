@@ -1060,9 +1060,11 @@ export default function HistoryPage() {
                             <span
                               className={`rounded-full border px-2.5 py-1 text-[10px] font-bold sm:px-3 sm:text-[11px] ${modeInfo.badgeClass}`}
                             >
-                              {
-                                modeInfo.icon
-                              }{" "}
+                              <span aria-hidden="true">
+                                {
+                                  modeInfo.icon
+                                }
+                              </span>{" "}
                               {
                                 modeInfo.label
                               }

@@ -1373,7 +1373,7 @@ export default function HomePage() {
         <main
           id="inicio"
           tabIndex={-1}
-          className="mx-auto max-w-[1500px] scroll-mt-24 px-4 py-5 focus:outline-none sm:px-5 sm:py-7 md:px-8 md:py-9"
+      className="mx-auto max-w-[1500px] scroll-mt-24 px-4 py-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset sm:px-5 sm:py-7 md:px-8 md:py-9"
         >
           {/* =================================================
               HERO
@@ -1504,7 +1504,7 @@ export default function HomePage() {
             id="desempenho"
             tabIndex={-1}
             aria-labelledby="desempenho-heading"
-            className="mt-5 scroll-mt-24 focus:outline-none sm:mt-7"
+        className="mt-5 scroll-mt-24 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:mt-7"
           >
             <h2
               id="desempenho-heading"
@@ -1970,7 +1970,7 @@ export default function HomePage() {
             id="materias"
             tabIndex={-1}
             aria-labelledby="materias-heading"
-            className="mt-7 scroll-mt-24 focus:outline-none sm:mt-9"
+        className="mt-7 scroll-mt-24 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:mt-9"
           >
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>

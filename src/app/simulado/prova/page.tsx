@@ -914,7 +914,9 @@ export default function ExamPage() {
 
   function handleSubmit() {
     if (
-      isSubmitting
+      isSubmitting ||
+      !session ||
+      !progress
     ) {
       return;
     }
@@ -1481,7 +1483,7 @@ export default function ExamPage() {
                 }
                 id="current-question-heading"
                 tabIndex={-1}
-                className="mt-3 break-words text-lg font-bold leading-7 text-slate-900 outline-none sm:text-xl sm:leading-8 md:text-2xl md:leading-9"
+                className="mt-3 break-words rounded-lg text-lg font-bold leading-7 text-slate-900 outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:text-xl sm:leading-8 md:text-2xl md:leading-9"
               >
                 {
                   currentQuestion.statement
@@ -1604,7 +1606,7 @@ export default function ExamPage() {
                 tabIndex={-1}
                 role="alert"
                 aria-atomic="true"
-                className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 outline-none"
+                className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
               >
                 <p className="text-xs font-bold text-red-700">
                   Não foi possível finalizar a prova

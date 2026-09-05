@@ -449,7 +449,10 @@ function SubjectCard({
 
       <div className="flex min-w-0 items-start justify-between gap-3 sm:gap-4">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-xl sm:h-12 sm:w-12 sm:text-2xl">
+          <div
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-xl sm:h-12 sm:w-12 sm:text-2xl"
+            aria-hidden="true"
+          >
             {
               subject.icon
             }
@@ -1051,7 +1054,7 @@ export default function MasteryPage() {
         {selectedSubject && (
           <section
             id="detalhe-materia"
-            className="mt-8 scroll-mt-6 sm:mt-10"
+            className="mt-8 scroll-mt-24 sm:mt-10"
           >
             {/* ===============================================
                 RESUMO DA MATÉRIA
@@ -1430,14 +1433,16 @@ export default function MasteryPage() {
               href="/revisao"
               className="min-h-12 rounded-xl border border-violet-200 bg-violet-50 px-5 py-3 text-center text-sm font-bold text-violet-700 transition hover:bg-violet-100"
             >
-              🎯 Treinar meus erros
+              <span aria-hidden="true">🎯</span>{" "}
+              Treinar meus erros
             </Link>
 
             <Link
               href="/recomendado"
               className="min-h-12 rounded-xl border border-indigo-200 bg-indigo-50 px-5 py-3 text-center text-sm font-bold text-indigo-700 transition hover:bg-indigo-100"
             >
-              ✨ Recomendado
+              <span aria-hidden="true">✨</span>{" "}
+              Recomendado
             </Link>
 
             <Link

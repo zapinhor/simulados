@@ -632,9 +632,11 @@ export default function ExamHistoryDetailPage() {
               <span
                 className={`inline-flex rounded-full border px-2.5 py-1 text-[10px] font-bold sm:px-3 sm:py-1.5 sm:text-xs ${modeInfo.badgeClass}`}
               >
-                {
-                  modeInfo.icon
-                }{" "}
+                <span aria-hidden="true">
+                  {
+                    modeInfo.icon
+                  }
+                </span>{" "}
                 {
                   modeInfo.label
                 }

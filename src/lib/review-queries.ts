@@ -63,12 +63,10 @@ export interface ReviewSummary {
  */
 
 function getPriority({
-  attempts,
   errors,
   errorRate,
   lastAttemptCorrect,
 }: {
-  attempts: number;
   errors: number;
   errorRate: number;
   lastAttemptCorrect: boolean;
@@ -360,9 +358,6 @@ export async function getReviewSummary(): Promise<ReviewSummary> {
 
     const priority =
       getPriority({
-        attempts:
-          attempts.length,
-
         errors,
 
         errorRate,

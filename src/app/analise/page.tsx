@@ -1119,7 +1119,8 @@ export default function AnalysisPage() {
               href="/revisao"
               className="min-h-12 rounded-xl border border-red-200 bg-red-50 px-5 py-3 text-center text-sm font-bold text-red-700 transition hover:bg-red-100"
             >
-              🎯 Treinar erros
+              <span aria-hidden="true">🎯</span>{" "}
+              Treinar erros
             </Link>
 
             <Link
