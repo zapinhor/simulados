@@ -934,7 +934,7 @@ export default function SubjectEvolutionPage() {
                           key={
                             point.examId
                           }
-                          href={`/historico/${point.examId}`}
+                          href={`/historico/detalhe?examId=${encodeURIComponent(point.examId)}`}
                           className="group flex min-w-0 items-center justify-between gap-3 rounded-xl border border-slate-100 bg-slate-50 p-3 transition hover:border-blue-200 hover:bg-blue-50/40 sm:p-4"
                         >
                           <div className="min-w-0 flex-1">

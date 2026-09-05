@@ -10,7 +10,7 @@ import {
 } from "react";
 
 import {
-  useParams,
+  useSearchParams,
 } from "next/navigation";
 
 import {
@@ -174,18 +174,13 @@ function getSingleQuestionTypeLabel(
  */
 
 export default function ExamHistoryDetailPage() {
-  const params =
-    useParams();
-
-  const rawExamId =
-    params.examId;
+  const searchParams =
+    useSearchParams();
 
   const examId =
-    Array.isArray(
-      rawExamId
-    )
-      ? rawExamId[0]
-      : rawExamId;
+    searchParams.get(
+      "examId"
+    ) ?? undefined;
 
   const [
     exam,

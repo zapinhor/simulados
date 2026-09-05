@@ -2282,7 +2282,7 @@ export default function HomePage() {
                           </span>
 
                           <Link
-                            href={`/historico/${exam.id}`}
+                            href={`/historico/detalhe?examId=${encodeURIComponent(exam.id)}`}
                             className="font-bold text-blue-600"
                           >
                             Detalhes →

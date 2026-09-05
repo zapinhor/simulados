@@ -1150,7 +1150,7 @@ export default function HistoryPage() {
                           </div>
 
                           <Link
-                            href={`/historico/${exam.id}`}
+                            href={`/historico/detalhe?examId=${encodeURIComponent(exam.id)}`}
                             className="flex min-h-[58px] items-center justify-center rounded-xl bg-blue-600 px-3 py-3 text-center text-xs font-bold text-white transition hover:bg-blue-700 sm:px-4"
                           >
                             Ver detalhes
